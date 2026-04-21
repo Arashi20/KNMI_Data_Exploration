@@ -1,0 +1,13 @@
+# Virtual Environment
+venv/
+env/
+
+
+# Data files
+data/
+
+
+# Logs
+logs/
+
+
