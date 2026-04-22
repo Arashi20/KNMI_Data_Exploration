@@ -22,15 +22,15 @@ For this project I decided to only pick the 5 most important weather stations th
 - Vlissingen
 - Eindhoven Airport
 
-Quick summary of the data (station name, entries, start date, end date): 
+Quick summary of the data:
 
-
--------------------------+---------+------------+------------
- De Bilt                 |    9497 | 2000-04-01 | 2026-04-01
- Eindhoven Airport       |    9497 | 2000-04-01 | 2026-04-01
- Groningen Airport Eelde |    9497 | 2000-04-01 | 2026-04-01
- Schiphol Airport        |    9497 | 2000-04-01 | 2026-04-01
- Vlissingen              |    9497 | 2000-04-01 | 2026-04-01
+| Station Name            | Entries | Start Date | End Date   |
+|-------------------------|---------|------------|------------|
+| De Bilt                 | 9497    | 2000-04-01 | 2026-04-01 |
+| Eindhoven Airport       | 9497    | 2000-04-01 | 2026-04-01 |
+| Groningen Airport Eelde | 9497    | 2000-04-01 | 2026-04-01 |
+| Schiphol Airport        | 9497    | 2000-04-01 | 2026-04-01 |
+| Vlissingen              | 9497    | 2000-04-01 | 2026-04-01 |
 
 ## Limitations
 
