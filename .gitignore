@@ -11,3 +11,6 @@ data/
 logs/
 
 
+# Environment variables
+.env
+
