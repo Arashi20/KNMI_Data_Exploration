@@ -88,6 +88,8 @@ def transform(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
     df['temp_max']       = df['temp_max'] / 10
     df['sunshine_hrs']   = df['sunshine_hrs'] / 10
     df['precipitation']  = df['precipitation'] / 10
+
+    df = df.where(pd.notnull(df), None)
     
     # Fix -1 values (meaning <0.05) -> 0
     df['sunshine_hrs']  = df['sunshine_hrs'].clip(lower=0)

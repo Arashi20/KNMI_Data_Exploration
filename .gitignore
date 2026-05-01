@@ -14,3 +14,11 @@ logs/
 # Environment variables
 .env
 
+
+# Local SQL session
+knmi_local.session.sql 
+
+
+# Vscode
+.vscode
+
