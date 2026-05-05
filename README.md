@@ -63,6 +63,20 @@ Quick summary of the data:
 - The longest (local) heatwave measured in the netherlands was in the east of our country (Eindhoven and surroundings), and lasted 28 days (2018). 
 - If we look at "extreme" weather (defined by a formula using max temperature, precipitation and average windspeed), Vlissingen station seems to have recorded the most extreme weather instances. This can probably be explained by the fact that it is a coastal station and thus has might higher windspeeds on average during the entire year (despite this station not measuring the most rainfall, as seen in previous queries). 
 
+## Power BI Insights: Warm Days
+
+![Hittedagen per Station per Jaar](visualisations/Hittedagen.png)
+
+For the purpose of this project I have defined a warm day as a day where the max temperature was higher than 25°C. The visualisation above shows the amount of warm day per year per station over the period 2000-2025.
+
+2018 seems to be the most extreme, with Eindhoven Airport counting almost 80 warm days in total. It makes sense that Eindhoven Airport shows the most extremes at is located in the south and more inland compared to the other stations. 
+
+For vlissingen and Schiphol, the extremes are consistently lower, which is to be explained by the moderation effect of the sea lowering overall temperatures. 
+
+The most concerning trend over this period is the fact that we are seeing a higher amount of total warm days in the more recent years, which is in line with climate change science. 
+
+
+
 
 ## Limitations
 
