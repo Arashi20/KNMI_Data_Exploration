@@ -1,6 +1,7 @@
 -- ============================================
 -- KNMI Weather Queries
 -- Level 1: Basis Aggregaties
+-- We maken in dit level alleen gebruik van GROUP BY
 -- ============================================
 
 

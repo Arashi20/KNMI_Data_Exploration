@@ -1,8 +1,9 @@
 -- ============================================
 -- Level 2: GROUP BY + HAVING
+-- HAVING zorgt voor filtering op de aggregaat
 -- ============================================
 
--- 1. Jaren met meer dan 20 hittedagen (TX > 25°C) per station
+-- 1. Jaren met meer dan 20 hittedagen (TX > 25°C) per station (Goed voor analyse in Power BI)
 SELECT
     s.name,
     d.year,

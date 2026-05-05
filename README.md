@@ -52,7 +52,16 @@ Quick summary of the data:
 - Something that baffled me completely: Spring was not even part of the results for query 4. This means spring in the Netherlands is considered the most dry season by a significant margin. 
 
 
+## Level 3 Insights: Window Functions
+- The biggest difference in temperatures between 2 neighbouring years seems to be measured in 2013-2014 and 2010-2021 (across all stations).
+- For De Bilt and Eindhoven Aiport the hottest summer was measured in 2018. For Groningen Airport it was 2019, for Schiphol airport it was 2025, and finally for Vlissingen it was measured in 2022. 
 
+
+## Level 4 Insights: CTEs
+- The warmest summers are found in 2018, 2022, and 2003. I personally have no recollection of the 2003 one (I was merely 3 years old), but apparently there was a big European heatwave. 
+- When it comes to rainfall it shows that 2025 has the biggest extremes (very little rainfall), but if we look at the amount of stations that reported little rainfall, 2018 seems to be the driest year.
+- The longest (local) heatwave measured in the netherlands was in the east of our country (Eindhoven and surroundings), and lasted 28 days (2018). 
+- If we look at "extreme" weather (defined by a formula using max temperature, precipitation and average windspeed), Vlissingen station seems to have recorded the most extreme weather instances. This can probably be explained by the fact that it is a coastal station and thus has might higher windspeeds on average during the entire year (despite this station not measuring the most rainfall, as seen in previous queries). 
 
 
 ## Limitations
