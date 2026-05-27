@@ -33,6 +33,12 @@ Quick summary of the data:
 | Schiphol Airport        | 9497    | 2000-04-01 | 2026-04-01 |
 | Vlissingen              | 9497    | 2000-04-01 | 2026-04-01 |
 
+## Workflow
+1. Set up a local PostgreSQL database. 
+2. Create SQL tables by running schema.sql
+3. Perform some explorative queries in folder /src
+4. Create some extra visualisations in Power BI
+
 
 ## Level 1 Insights: Aggregates
 
