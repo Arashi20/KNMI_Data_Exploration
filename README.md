@@ -81,6 +81,30 @@ For vlissingen and Schiphol, the extremes are consistently lower, which is to be
 
 The most concerning trend over this period is the fact that we are seeing a higher amount of total warm days in the more recent years, which is in line with climate change science. 
 
+## Power BI Insights: Rolling Averages & Trends
+
+![Rolling Average](visualisations/Rolling_avg_30d.png)
+
+I have used the rolling_average_30d SQL script to get the 30-day rolling average for all stations from 2000-2025. 
+
+The line chart only really shows the seasonal ups and downs (which we already knew existed from experiences in real life) and it shows Eindhoven Airport always peaks the highest every year, while Groningen Aiport consistently hits the lowest point. 
+
+But the difference during the entire year, including the transitional months, is harder to make out from this line chart - hence why I decided to add an additional SQL query that checks the deviation from the national average.
+
+![Deviation](visualisations/afwijking_nat_gemiddelde.png)
+
+This image shows the deviation of the temperatures measured by the stations, compared to the national average. Due to lots of fluctuations, the visualisation cannot tell us much more than we already knew.
+
+To better understand structural temperature differences between stations, I calculated each station's daily deviation from the national average (mean of all 5 stations on that day), and applied a 90-day rolling average to smooth out daily noise.
+
+![Deviation_rolling_avg](visualisations/Rolling_avg_afwijking_nat_gemiddelde.png)
+
+- Groningen Airport Eelde is consistently below 0 throughout the entire period — structurally the coldest station in the dataset, which aligns with its northern inland location.
+- Vlissingen is consistently the warmest relative to the national average, which is somewhat surprising for a coastal station. This is likely explained by the maritime climate — the North Sea keeps temperatures milder year-round compared to inland stations.
+- De Bilt and Schiphol hover closely around 0, confirming their role as "average" Dutch stations that closely represent the national mean.
+- Eindhoven fluctuates around 0 with a slight seasonal pattern — warmer in summer, cooler in winter relative to the national average. Its inland location amplifies temperature extremes but averages out over the year.
+
+The initial 30-day rolling average chart showed all stations following near-identical seasonal patterns, making it difficult to distinguish structural differences between locations. To isolate these differences, a deviation-from-national-average approach was applied instead, revealing clear and consistent positional patterns across stations.
 
 
 

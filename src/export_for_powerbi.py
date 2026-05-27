@@ -19,6 +19,8 @@ conn = psycopg2.connect(
 
 exports = [
     ('src/exports/rolling_average_30d.sql', 'data/processed/rolling_avg_30d.csv'),
+    ('src/exports/deviation_nat_avg.sql', 'data/processed/deviation_nat_avg.csv'),
+    ('src/exports/deviation_rolling_avg_nat_avg.sql', 'data/processed/deviation_rolling_avg_nat_avg.csv'),
 ]
 
 for sql_file, output_file in exports:
