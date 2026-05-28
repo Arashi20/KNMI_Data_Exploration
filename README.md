@@ -23,6 +23,7 @@ For this project I decided to only pick the 5 most important weather stations th
 - Vlissingen
 - Eindhoven Airport
 
+
 Quick summary of the data:
 
 | Station Name            | Entries | Start Date | End Date   |
@@ -33,12 +34,24 @@ Quick summary of the data:
 | Schiphol Airport        | 9497    | 2000-04-01 | 2026-04-01 |
 | Vlissingen              | 9497    | 2000-04-01 | 2026-04-01 |
 
-## Workflow
-1. Set up a local PostgreSQL database. 
-2. Create SQL tables by running schema.sql
-3. Perform some explorative queries in folder /src
-4. Create some extra visualisations in Power BI
+The data was manually downloaded from the KNMI Daily Weather Data portal:
+https://daggegevens.knmi.nl/klimatologie/daggegevens
 
+The following variables were selected:
+- **FG**: Daily mean windspeed (m/s)
+- **TG**: Daily mean temperature (°C)
+- **TN**: Minimum temperature (°C)
+- **TX**: Maximum temperature (°C)
+- **SQ**: Sunshine duration (hours)
+- **SP**: Percentage of maximum sunshine duration
+- **RH**: Daily precipitation (mm)
+
+## How to Run
+1. Clone the repo
+2. Install dependencies: `pip install -r requirements.txt`
+3. Create a `.env` file based on `.env.example`
+4. Run `python src/etl.py` to load the data
+5. Open Power BI and connect to the exported CSVs in `data/processed/`
 
 ## Level 1 Insights: Aggregates
 
